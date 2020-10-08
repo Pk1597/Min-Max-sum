@@ -1,0 +1,16 @@
+# defining miniMaxSum function with inpur array as argument
+def miniMaxSum(arr):
+    #Summing up first four elements as total_1
+    total_1=sum(arr[0:4])
+    #Summing up second four elemets as total_2
+    total_2=sum(arr[1:5])
+    #returning total_1 and total_2 
+    return total_1,total_2
+#Get the input array as list and elements as int
+arr = list(map(int, input().rstrip().split()))
+#Sorting the elements in the ascending order
+arr.sort()
+#assigning the result of the function to the variable result
+result=miniMaxSum(arr)
+#printing the results as string
+print(str(result[0])+" "+str(result[1]))
